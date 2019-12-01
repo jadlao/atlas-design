@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -54,16 +55,11 @@ body {
   color: black;
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.8px; }
 
 a {
   text-decoration: none; }
-
-.blue {
-  background: blue; }
-
-.black {
-  background: black; }
 
 .container header {
   height: 80px; }
@@ -84,7 +80,13 @@ a {
         padding-right: 15px;
         border-right: 1px solid black; }
         .container header nav ul li a {
+          padding: 5px 10px;
           color: black; }
+          .container header nav ul li a:hover {
+            color: #214de4;
+            background: #d7d7d7;
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out; }
       .container header nav ul i {
         margin-left: 10px;
         margin-right: 10px;
@@ -98,9 +100,14 @@ a {
         border: 1px solid black;
         text-transform: uppercase;
         padding: 5px 20px; }
+        .container header nav ul button:hover {
+          background: white;
+          color: black;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
 
 .container #hero .left-hero {
-  background-image: url("https://i.ibb.co/BnLVkCb/hero-bg.jpg");
+  background-image: url("https://i.ibb.co/Km2jFCY/d7hftxdivxxvm-cloudfront.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -108,12 +115,15 @@ a {
   float: left;
   position: relative; }
   .container #hero .left-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     background: black;
     color: white;
     position: absolute;
     left: 80px;
-    bottom: 100px; }
+    bottom: 100px;
+    line-height: 1.2;
+    padding: 10px;
+    font-weight: 300; }
   .container #hero .left-hero button {
     position: absolute;
     left: 80px;
@@ -124,12 +134,17 @@ a {
     padding: 5px 20px;
     border: 1px solid white;
     cursor: pointer; }
+    .container #hero .left-hero button:hover {
+      color: white;
+      background: #f786b9;
+      border: 1px solid #f786b9;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
 
 .container #hero .right-hero {
   width: 40%;
   float: right;
   margin: 0;
-  background: purple;
   height: 500px; }
   .container #hero .right-hero .program {
     height: 250px;
@@ -165,11 +180,17 @@ a {
       color: white;
       padding: 10px 15px;
       margin-right: 40px;
-      margin-top: 20px; }
+      margin-top: 20px;
+      cursor: pointer; }
+      .container #hero .right-hero .program i:hover {
+        color: black;
+        background: white;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
   .container #hero .right-hero .program:first-child {
-    background: pink; }
+    background: #f786b9; }
   .container #hero .right-hero .program:nth-child(2) {
-    background: orange; }
+    background: #f56401; }
 
 .container #about {
   padding-top: 50px; }
@@ -184,13 +205,12 @@ a {
       margin-top: 20px;
       margin-bottom: 100px;
       font-size: 2rem;
-      font-weight: 100; }
+      font-weight: 100;
+      line-height: 1.3; }
       .container #about .about-text p span:first-child {
-        color: red; }
+        color: #da3b22; }
       .container #about .about-text p span:nth-child(3) {
-        color: blue; }
-      .container #about .about-text p span:nth-child(6) {
-        color: pink; }
+        color: #214de4; }
 
 .container #projects .col-1, .container #projects .col-2, .container #projects .col-3, .container #projects .col-4 {
   width: 25%;
@@ -201,7 +221,10 @@ a {
   text-align: center;
   padding: 20px; }
   .container #projects .project-1 p, .container #projects .project-2 p, .container #projects .project-3 p, .container #projects .project-4 p, .container #projects .project-5 p, .container #projects .project-6 p, .container #projects .project-7 p, .container #projects .project-8 p {
-    margin-top: 30px; }
+    margin-top: 30px;
+    line-height: 1.2;
+    font-size: 0.7rem;
+    font-weight: 300; }
 
 .container #projects .project-wrapper {
   display: inline-block;
@@ -224,32 +247,38 @@ a {
         border: 1px solid white;
         padding: 5px 20px;
         cursor: pointer; }
+        .container #projects .project-wrapper .col-1 .project-1 button:hover {
+          color: white;
+          background: #f786b9;
+          border: 1px solid #f786b9;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
     .container #projects .project-wrapper .col-1 .project-2 {
-      background: lightgrey; }
+      background: #d7d7d7; }
       .container #projects .project-wrapper .col-1 .project-2 img {
         width: 150px; }
   .container #projects .project-wrapper .col-2 .project-3 {
-    background: lightgrey; }
+    background: #d7d7d7; }
     .container #projects .project-wrapper .col-2 .project-3 img {
       width: 150px; }
   .container #projects .project-wrapper .col-2 .project-4 {
-    background: orange;
+    background: #f56401;
     color: white; }
     .container #projects .project-wrapper .col-2 .project-4 img {
       width: 150px; }
   .container #projects .project-wrapper .col-3 {
     margin-top: -20px; }
     .container #projects .project-wrapper .col-3 .project-5 {
-      background: blue;
+      background: #214de4;
       color: white; }
       .container #projects .project-wrapper .col-3 .project-5 img {
         width: 150px; }
     .container #projects .project-wrapper .col-3 .project-6 {
-      background: lightgrey; }
+      background: #d7d7d7; }
       .container #projects .project-wrapper .col-3 .project-6 img {
         width: 150px; }
   .container #projects .project-wrapper .col-4 .project-7 {
-    background: lightgrey; }
+    background: #d7d7d7; }
     .container #projects .project-wrapper .col-4 .project-7 img {
       width: 150px; }
   .container #projects .project-wrapper .col-4 .project-8 {
@@ -280,10 +309,16 @@ a {
       text-transform: uppercase;
       margin-top: 50px;
       cursor: pointer; }
+      .container #supporters .supporter-wrapper .col-1 button:hover {
+        color: white;
+        background: #f786b9;
+        border: 1px solid #f786b9;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
 
 .container #thoughts {
   padding: 50px 80px;
-  background: pink;
+  background: #f786b9;
   height: 550px; }
   .container #thoughts .left-col {
     width: 60%;
@@ -308,14 +343,63 @@ a {
       .container #thoughts .right-col .row .text {
         float: right;
         width: 60%;
-        padding-left: 40px; }
+        padding-left: 40px;
+        font-size: 0.7em; }
         .container #thoughts .right-col .row .text a {
           position: absolute;
-          bottom: 22px; }
+          bottom: 22px;
+          color: white; }
+          .container #thoughts .right-col .row .text a:hover {
+            color: #214de4;
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out; }
     .container #thoughts .right-col .row:nth-child(1), .container #thoughts .right-col .row:nth-child(2) {
       border-bottom: 2px solid white; }
     .container #thoughts .right-col .row:nth-child(2), .container #thoughts .right-col .row:nth-child(3) {
       margin-top: 20px; }
+
+footer {
+  background: black;
+  padding: 50px 80px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  footer h1 {
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px; }
+  footer p {
+    color: white;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 0.8rem; }
+  footer .contact {
+    width: 40%;
+    float: left; }
+  footer .connect {
+    width: 20%;
+    float: left; }
+    footer .connect i {
+      color: white;
+      font-size: 1.3em;
+      cursor: pointer;
+      margin-right: 15px; }
+      footer .connect i:hover {
+        color: #f786b9;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+  footer .subscribe {
+    width: 30%;
+    float: right; }
+    footer .subscribe input {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      width: 100%; }
 
 @media screen and (max-width: 1170px) {
   #thoughts {
@@ -328,24 +412,44 @@ a {
       width: 100% !important; } }
 
 @media screen and (max-width: 940px) {
+  nav {
+    font-size: 0.7em; }
   #hero .left-hero {
     width: 100% !important; }
   #hero .right-hero {
     width: 100% !important; }
-  #about .about-text {
-    width: 100% !important;
-    margin: 1040px auto 0 !important;
-    padding: 0 50px !important; }
-    #about .about-text h6 {
-      margin-top: 100px !important; }
-    #about .about-text p {
-      font-size: 1.6rem !important; }
+    #hero .right-hero .program {
+      height: 300px !important;
+      padding: 20px 80px; }
+      #hero .right-hero .program h6, #hero .right-hero .program p {
+        margin-left: 0 !important; }
+      #hero .right-hero .program i {
+        margin-right: 0 !important; }
+  #about {
+    text-align: center;
+    padding-top: 200px !important; }
+    #about .about-text {
+      width: 100% !important;
+      margin: 1040px auto 0 !important; }
+      #about .about-text h6 {
+        margin-top: 100px !important; }
+      #about .about-text p {
+        font-size: 1.6rem !important; }
   #projects .col-1, #projects .col-2, #projects .col-3, #projects .col-4 {
     width: 50% !important; }
   #projects .col-1, #projects .col-3 {
     margin-top: 0 !important; }
   #supporters .col-1, #supporters .col-2, #supporters .col-3, #supporters .col-4 {
-    width: 50% !important; } }
+    width: 50% !important; }
+  footer {
+    display: block;
+    height: 550px; }
+    footer .contact, footer .connect, footer .subscribe {
+      width: 100%; }
+    footer .connect, footer .subscribe {
+      margin-top: 50px; }
+    footer i {
+      margin-right: 15px; } }
 
 @media screen and (max-width: 850px) {
   header .nav-brand {
@@ -360,7 +464,15 @@ a {
     margin: 1040px auto 0 !important;
     padding: 0 50px !important; } }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 0.7em !important; }
+  #about, .left-hero, .program, #supporters, #thoughts, footer {
+    padding: 0 20px !important; } }
+
 @media screen and (max-width: 500px) {
+  p {
+    font-size: 0.2em; }
   #hero .left-hero h1 {
     bottom: 200px !important;
     left: 50px !important; }
