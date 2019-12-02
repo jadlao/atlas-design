@@ -9,6 +9,11 @@
 </head>
 
 <body>
+  <!-- Target div for handlebars -->
+  <div id="target"></div>
+
+  <!-- Handlebars script start -->
+  <script id="template" type="text/x-handlebars-template">
   <div class="container">
     <header>
       <div class="nav-brand">
@@ -190,7 +195,7 @@
           Sydney <br>
           NSW 2000</p>
   
-        <p>Tel: 02 9889 0000</p>
+        <p>Tel: {{tel}}</p>
       </div>
       <div class="connect">
         <h1>Connect</h1>
@@ -209,20 +214,13 @@
         <input type="text" placeholder="Enter your email" />
       </div>
     </footer>
-
+    </script>
+    <!-- Handlebars script end -->
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-  <script>
-    // compile the template
-    var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
-    // execute the compiled template and print the output to the console
-    {
-      doesWhat: "hello"
-    }
-  </script>
   <script src="script.js"></script>
 </body>
 
