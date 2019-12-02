@@ -472,16 +472,34 @@ footer {
 
 @media screen and (max-width: 500px) {
   p {
-    font-size: 0.2em; }
+    font-size: 0.2rem; }
+  header .nav-brand img {
+    margin-top: -10px;
+    margin-left: -10px; }
+  header nav i {
+    margin-top: 5px;
+    font-size: 1rem; }
   #hero .left-hero h1 {
     bottom: 200px !important;
-    left: 50px !important; }
+    left: 50px !important;
+    margin-left: -10px;
+    font-size: 1.4rem !important;
+    width: 70%; }
   #hero .left-hero button {
     bottom: 150px !important;
-    left: 50px !important; }
+    left: 50px !important;
+    margin-left: -10px; }
+  #hero .right-hero .program {
+    padding-left: 30px !important; }
+    #hero .right-hero .program img {
+      margin-top: 40px !important; }
+    #hero .right-hero .program h6 {
+      margin-top: 30px !important; }
+    #hero .right-hero .program i {
+      margin-top: 0 !important; }
   #about .about-text {
     width: 100% !important;
-    margin: 1040px auto 0 !important;
+    margin: 1180px auto 0 !important;
     padding: 0 50px !important; }
     #about .about-text h6 {
       margin-top: 100px !important; }
@@ -491,7 +509,36 @@ footer {
     width: 100% !important; }
     #projects .col-1 .project-1, #projects .col-1 .project-2, #projects .col-1 .project-3, #projects .col-1 .project-4, #projects .col-1 .project-5, #projects .col-1 .project-6, #projects .col-1 .project-7, #projects .col-1 .project-8, #projects .col-2 .project-1, #projects .col-2 .project-2, #projects .col-2 .project-3, #projects .col-2 .project-4, #projects .col-2 .project-5, #projects .col-2 .project-6, #projects .col-2 .project-7, #projects .col-2 .project-8, #projects .col-3 .project-1, #projects .col-3 .project-2, #projects .col-3 .project-3, #projects .col-3 .project-4, #projects .col-3 .project-5, #projects .col-3 .project-6, #projects .col-3 .project-7, #projects .col-3 .project-8, #projects .col-4 .project-1, #projects .col-4 .project-2, #projects .col-4 .project-3, #projects .col-4 .project-4, #projects .col-4 .project-5, #projects .col-4 .project-6, #projects .col-4 .project-7, #projects .col-4 .project-8 {
       padding: 50px !important; }
-  #supporters .col-1, #supporters .col-2, #supporters .col-3, #supporters .col-4 {
-    width: 100% !important; }
+  #supporters {
+    padding-bottom: 40px !important; }
+    #supporters .col-1, #supporters .col-2, #supporters .col-3, #supporters .col-4 {
+      width: 100% !important; }
+    #supporters button {
+      margin-bottom: 40px; }
   #thoughts {
-    padding: 50px 50px !important; } }
+    height: 1050px !important;
+    padding: 50px 30px !important; }
+    #thoughts .right-col .row .text {
+      width: 40% !important;
+      margin-top: 0px;
+      padding-left: 0px !important; }
+      #thoughts .right-col .row .text p {
+        font-size: 0.5rem !important;
+        line-height: 1.2; }
+      #thoughts .right-col .row .text a {
+        margin-bottom: 2px; }
+  footer {
+    height: 500px;
+    padding: 30px 30px !important; } }
+
+@media screen and (max-width: 380px) {
+  #hero .right-hero .program i {
+    margin-top: 20px !important; }
+  #thoughts {
+    height: 1250px !important; }
+    #thoughts .right-col .row {
+      height: 200px !important; }
+      #thoughts .right-col .row .text {
+        width: 100% !important; }
+        #thoughts .right-col .row .text p {
+          margin-top: 20px; } }
